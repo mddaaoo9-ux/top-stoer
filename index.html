@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لوحة الإدارة</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<h1>TOP STOER - لوحة الإدارة</h1>
+<nav>
+<a href="index.html">🏬 المتجر</a>
+</nav>
+</header>
+
+
+<div class="admin-box">
+<h2>إضافة منتج جديد</h2>
+
+
+<input id="pname" type="text" placeholder="اسم المنتج">
+<input id="pprice" type="number" placeholder="السعر">
+<input id="pimage" type="text" placeholder="رابط الصورة">
+
+
+<button onclick="addProduct()">إضافة المنتج</button>
+</div>
+
+
+<h2 style="text-align:center;">المنتجات الحالية</h2>
+<div id="admin-products" class="products"></div>
+
+
+<script src="app.js"></script>
+<script>loadAdmin();</script>
+</body>
+</html>
